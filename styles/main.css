@@ -49,8 +49,11 @@ table {
 	border-spacing: 0;
 }
 
+/* font-family: 'Cantata One', serif; */
+
 /* GRID STRUCTURE */
 body {
+
   height: 100%;
   display: grid;
   width: 100vw;
@@ -60,16 +63,34 @@ body {
 }
 
 .main-container {
+  background-image: url("../images/linedpaper.png");
+  background-size: cover;
   grid-column: 2/ span 1;
   grid-row: 2/span 1;
-  background: yellow;
+
+  display: grid;
+  grid-template-columns: 13vw 63vw 14vw;
+  /* grid-template-columns: 5% 90% 5%; */
+  grid-template-rows: 12vw;
+  /* background: yellow; */
   -ms-transform: rotate(-4deg); /* IE 9 */
   -webkit-transform: rotate(-4deg); /* Safari 3-8 */
   transform: rotate(-4deg);
-  /* margin: 40px;
-  /* position: absolute; */
-  /* width: 90%;
-  height: 90%;
-  display: grid; */
   border: 1px solid red;
+}
+
+header {
+  grid-column: 2/ span 1;
+  grid-row: 1/span 1;
+  align-self: end;
+  background: none;
+  font-family: 'Cantata One', serif;
+  border: 1px solid black;
+}
+
+
+.center-container {
+  background: none;
+  grid-column: 2/ span 1;
+  grid-row: 2/span 1;
 }
