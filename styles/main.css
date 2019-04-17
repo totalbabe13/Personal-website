@@ -57,7 +57,7 @@ body {
   height: 100%;
   display: grid;
   width: 100vw;
-  height: 90vh;
+  height: 110vh;
   grid-template-columns: 5% 90% 5%;
   grid-template-rows: 5% 100% 5%;
 }
@@ -70,7 +70,6 @@ body {
 
   display: grid;
   grid-template-columns: 13vw 63vw 14vw;
-  /* grid-template-columns: 5% 90% 5%; */
   grid-template-rows: 12vw;
   /* background: yellow; */
   -ms-transform: rotate(-4deg); /* IE 9 */
@@ -79,18 +78,91 @@ body {
   border: 1px solid red;
 }
 
-header {
+/* Header styles  */
+.home-header {
   grid-column: 2/ span 1;
   grid-row: 1/span 1;
   align-self: end;
   background: none;
   font-family: 'Cantata One', serif;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
+h1 {
+  font-size:3vw;
+}
+h2 {
+  visibility: hidden;
+  height: 0px;
+}
+#greeting {
+  font-size:2vw;
+}
+ /* - - - - - - - - -  */
 
+
+/* Content and Navigation */
 
 .center-container {
+  padding: 2vh;
   background: none;
   grid-column: 2/ span 1;
   grid-row: 2/span 1;
+}
+
+/* link styles */
+
+li {
+  position: relative;
+  border: 1px red;
+  top:1vw;
+  height: 3vw;
+  width: 3vw;
+  margin: 2vw;
+}
+
+a {
+  background: white;
+  border: 1px red solid;
+  padding: 1vw;
+  font-size: 2vw;
+}
+
+a.exhibitions:link {
+  color: #4400f2;
+}
+a.exhibitions:visited {
+  color: black;
+}
+a.exhibitions:hover {
+  color: blue;
+}
+
+a.websites:link {
+  color: #c60000;
+}
+a.websites:visited {
+  color: black;
+}
+a.websites:hover {
+  color: blue;
+}
+
+a.projects:link {
+  color: #ff7700;
+}
+a.projects:visited {
+  color: black;
+}
+a.projects:hover {
+  color: blue;
+}
+
+/* Footer styles */
+.location {
+  position: relative;
+  top: 5vw;
+  padding: 2vw;
+  background: white;
+  border: 1px red solid;
+
 }
