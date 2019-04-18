@@ -50,7 +50,7 @@ table {
 }
 
 header {
-	border: 1px black solid;
+	/* border: 1px black solid; */
 	height: 5vh;
 	text-align: center;
 	margin-top: 4vh;
@@ -62,7 +62,17 @@ h1 {
 }
 
 h2 {
-	margin-left: 1vw;
+	text-shadow: 0px 0px 2px #00ff30;
+  display: inline-block;
+  color: black;
+  /* text-align: center; */
+  width: 40vw;
+  margin-left: 10vw;
+}
+
+section {
+	margin-top: 3vh;
+	margin-bottom: 3vh;
 }
 
 .outter_wrapper {
